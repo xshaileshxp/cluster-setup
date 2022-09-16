@@ -48,6 +48,11 @@ After the above commands are successfully run on all the worker nodes. Below ste
 
 #### On Leader Node
 
+CHeck kubectl status 
+
+systemctl status kubelet.service 
+systemctl daemon-reload
+systemctl restart docker.service
 Run the below command on the node that you want to make the leader node. Please make sure you replace the correct IP of the node with `IP-of-Node`
 
 ```
